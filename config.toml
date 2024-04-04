@@ -1,4 +1,25 @@
 baseURL = 'https://bleauweb.net/'
 languageCode = 'en-us'
-title = 'Brandon Bleau'
+title = 'Bleau Web Network'
 theme = "github-style"
+
+[params]
+    author = "Brandon Bleau"
+    description = ""
+    github = "ErdMutter92"
+    #   facebook = "MeiK2333"
+    #   twitter = "MeiK2333"
+    #   linkedin = "MeiK2333"
+    #   instagram = "MeiK2333"
+    #   tumblr = "MeiK2333"
+    email = "bmbleau@gmail.com"
+    url = "https://bleauweb.net"
+    keywords = "blog, google analytics"
+    rss = true
+    lastmod = true
+    userStatusEmoji = "😀"
+    favicon = "/images/github.png"
+    avatar = "https://avatars.githubusercontent.com/u/4696917?v=4"
+    headerIcon = "/images/GitHub-Mark-Light-32px.png"
+    location = "USA"
+    enableGitalk = false
