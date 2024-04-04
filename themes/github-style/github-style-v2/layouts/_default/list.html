@@ -1,0 +1,13 @@
+{{ define "content" }}
+<div class="application-main">
+  <main>
+    {{ partial "user-profile.html" . }}
+
+    {{ if eq .Params.title "Projects" }}
+      {{ partial "projects.html" .}}
+    {{ end }}
+    {{ if eq .Params.title "Posts" }}
+      {{ partial "posts.html" .}}
+    {{ end }}
+</div>
+{{end }}

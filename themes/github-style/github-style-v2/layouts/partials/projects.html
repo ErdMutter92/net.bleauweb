@@ -1,0 +1,54 @@
+{{ define "projects" }}
+<div class="mt-4">
+  <div class="js-pinned-items-reorder-container">
+    <ol class="d-flex flex-wrap list-style-none gutter-condensed mb-4 js-pinned-items-reorder-list">
+      {{ range .Paginator.Pages }}
+      <li class="col-12 col-md-6 col-lg-6 mb-3 d-flex flex-content-stretch">
+        <div
+          class="Box pinned-item-list-item d-flex p-3 width-full js-pinned-item-list-item public source reorderable sortable-button-item">
+          <div class="pinned-item-list-item-content">
+            <div class="d-flex width-full flex-items-center position-relative">
+              <svg class="octicon octicon-repo mr-2 text-gray flex-shrink-0" viewBox="0 0 16 16" version="1.1"
+                width="16" height="16">
+                <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+              </svg>
+              <a class="text-bold flex-auto min-width-0" href="{{ .Params.website }}" target="_blank">
+                <span class="repo" title="{{ .Title }}">{{ .Title }}</span>
+              </a>
+            </div>
+
+
+            <div name="summary" class="pinned-item-desc text-gray text-small d-block mt-2 mb-3">
+              {{ .Summary | safeHTML }}
+            </div>
+
+            <p class="mb-0 f6 text-gray">
+              {{ with .Params.tags }}
+              {{ range $tag := (first 5 .) }}
+              <a href="{{ relURL (print "/tags/" . | urlize) }}" class="pinned-item-meta muted-link ">
+                <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                  <path fill-rule="evenodd"
+                    d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                  </path>
+                </svg>
+                {{ $tag }}
+              </a>
+              {{ end }}
+              {{ end }}
+            </p>
+            {{ if .Params.language }}
+            <p class="mb-0 f6 text-gray">
+              <span>{{ .Params.language }}</span>
+              <span class="float-right">
+                {{ if .Params.repo }}<a href="{{ .Params.repo }}" target="_blank">Source</a>{{ end }}
+              </span>
+            </p>
+            {{ end }}
+          </div>
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</div>
+{{ end }}
