@@ -1,9 +1,8 @@
 ---
-
 title: "{{ replace .Name "-" " " | title }}"
-
 date: {{ .Date }}
-
-repo: https://github.com/ErdMutter92/net.bleauweb.git
-
+language: TypeScript
+webiste: https://bleauweb.net/
+repo: https://github.com/
 ---
+What have a done?!?!?!?
