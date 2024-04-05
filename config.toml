@@ -1,6 +1,6 @@
 baseURL = 'https://bleauweb.net/'
 languageCode = 'en-us'
-title = 'Bleau Web Network'
+title = 'BleauWeb'
 theme = "github-style"
 
 [params]
