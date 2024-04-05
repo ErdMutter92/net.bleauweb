@@ -15,6 +15,9 @@
     <link rel="icon" type="image/x-icon" href='{{ "images/favicon.ico" | absURL }}'>
     {{ end }}
     <meta name="theme-color" content="#1e2327">
+    {{ if .Site.Params.mastodonUsername }}
+        <link rel="me" href="https://{{ .Site.Params.mastodonWebsite }}/{{ .Site.Params.mastodonUsername }}">
+    {{ end }}
 
     <!-- Extended head section-->
     {{ partial "extended_head.html" . }}
