@@ -2,6 +2,7 @@
 title: "Idecos"
 date: 2024-04-04T19:56:34-04:00
 language: TypeScript
+featuredProject: true
 website: https://github.com/ErdMutter92/idecos
 repo: https://github.com/ErdMutter92/idecos
 ---
