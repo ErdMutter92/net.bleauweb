@@ -18,9 +18,9 @@ theme = "github-style"
     keywords = "blog, google analytics"
     rss = true
     lastmod = true
-    userStatusEmoji = "🤔"
+    userStatusEmoji = "💡"
     favicon = "/images/github.png"
     avatar = "https://avatars.githubusercontent.com/u/4696917?v=4"
-    headerIcon = "/images/GitHub-Mark-Light-32px.png"
+    headerIcon = "/images/thinking.png"
     location = "USA"
     enableGitalk = false
