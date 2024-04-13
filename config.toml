@@ -4,7 +4,7 @@ title = 'BleauWeb'
 theme = "github-style"
 
 [params]
-    author = "Brandon Bleau"
+    author = "Mx. Bleau"
     description = ""
     github = "bmbleau"
     mastodonUsername = "@mxbleau"
@@ -18,7 +18,7 @@ theme = "github-style"
     lastmod = true
     userStatusEmoji = "💡"
     favicon = "/images/github.png"
-    avatar = "/images/IMG_0068.jpeg"
+    avatar = "/images/IMG_0079_inverse.jpeg"
     headerIcon = "/images/thinking.png"
     location = "USA, Earth"
     enableGitalk = false
